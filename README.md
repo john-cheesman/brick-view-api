@@ -1,4 +1,4 @@
 # Brick View API
 
-> A NodeJS web API exposing parts of the BrickSet API
+> A NodeJS Swagger API exposing parts of the BrickSet API
 

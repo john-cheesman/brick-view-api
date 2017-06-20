@@ -2,7 +2,7 @@
   "name": "brick-view-api",
   "version": "0.0.1",
   "private": true,
-  "description": "A NodeJS web API exposing parts of the BrickSet API",
+  "description": "A NodeJS Swagger API exposing parts of the BrickSet API",
   "keywords": [],
   "author": "",
   "license": "",
