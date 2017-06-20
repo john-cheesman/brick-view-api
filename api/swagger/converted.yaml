@@ -1,0 +1,3740 @@
+swagger: '2.0'
+info:
+  version: '1.0'
+  title: BricksetAPIv2
+  license:
+    name: MIT
+    url: http://github.com/gruntjs/grunt/blob/master/LICENSE-MIT
+host: brickset.com
+basePath: /api/v2.asmx
+schemes:
+- http
+consumes:
+- application/json
+produces:
+- application/json
+paths:
+  /getSets:
+    post:
+      description: ''
+      summary: getSets
+      operationId: getSets
+      produces:
+      - application/json
+      parameters:
+      - name: getSetsSoapIn
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/GetSetsSoapIn'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetSetsSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  //getSets:
+    get:
+      description: ''
+      summary: getSets
+      operationId: getSets1
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: query
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/GetSets'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetSetsSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+    post:
+      description: ''
+      summary: getSets
+      operationId: getSets2
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: formData
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/GetSets'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetSetsSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /getSet:
+    post:
+      description: ''
+      summary: getSet
+      operationId: getSet
+      produces:
+      - application/json
+      parameters:
+      - name: getSetSoapIn
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/GetSetSoapIn'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetSetSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  //getSet:
+    get:
+      description: ''
+      summary: getSet
+      operationId: getSet1
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: query
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/GetSet'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetSetSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+    post:
+      description: ''
+      summary: getSet
+      operationId: getSet2
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: formData
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/GetSet'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetSetSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /getRecentlyUpdatedSets:
+    post:
+      description: ''
+      summary: getRecentlyUpdatedSets
+      operationId: getRecentlyUpdatedSets
+      produces:
+      - application/json
+      parameters:
+      - name: getRecentlyUpdatedSetsSoapIn
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/GetRecentlyUpdatedSetsSoapIn'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetRecentlyUpdatedSetsSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  //getRecentlyUpdatedSets:
+    get:
+      description: ''
+      summary: getRecentlyUpdatedSets
+      operationId: getRecentlyUpdatedSets1
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: query
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/GetRecentlyUpdatedSets'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetRecentlyUpdatedSetsSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+    post:
+      description: ''
+      summary: getRecentlyUpdatedSets
+      operationId: getRecentlyUpdatedSets2
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: formData
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/GetRecentlyUpdatedSets'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetRecentlyUpdatedSetsSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /getAdditionalImages:
+    post:
+      description: ''
+      summary: getAdditionalImages
+      operationId: getAdditionalImages
+      produces:
+      - application/json
+      parameters:
+      - name: getAdditionalImagesSoapIn
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/GetAdditionalImagesSoapIn'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetAdditionalImagesSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  //getAdditionalImages:
+    get:
+      description: ''
+      summary: getAdditionalImages
+      operationId: getAdditionalImages1
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: query
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/GetAdditionalImages'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetAdditionalImagesSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+    post:
+      description: ''
+      summary: getAdditionalImages
+      operationId: getAdditionalImages2
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: formData
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/GetAdditionalImages'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetAdditionalImagesSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /getReviews:
+    post:
+      description: ''
+      summary: getReviews
+      operationId: getReviews
+      produces:
+      - application/json
+      parameters:
+      - name: getReviewsSoapIn
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/GetReviewsSoapIn'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetReviewsSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  //getReviews:
+    get:
+      description: ''
+      summary: getReviews
+      operationId: getReviews1
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: query
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/GetReviews'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetReviewsSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+    post:
+      description: ''
+      summary: getReviews
+      operationId: getReviews2
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: formData
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/GetReviews'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetReviewsSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /getInstructions:
+    post:
+      description: ''
+      summary: getInstructions
+      operationId: getInstructions
+      produces:
+      - application/json
+      parameters:
+      - name: getInstructionsSoapIn
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/GetInstructionsSoapIn'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetInstructionsSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  //getInstructions:
+    get:
+      description: ''
+      summary: getInstructions
+      operationId: getInstructions1
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: query
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/GetInstructions'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetInstructionsSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+    post:
+      description: ''
+      summary: getInstructions
+      operationId: getInstructions2
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: formData
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/GetInstructions'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetInstructionsSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /getMinifigCollection:
+    post:
+      description: ''
+      summary: getMinifigCollection
+      operationId: getMinifigCollection
+      produces:
+      - application/json
+      parameters:
+      - name: getMinifigCollectionSoapIn
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/GetMinifigCollectionSoapIn'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetMinifigCollectionSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  //getMinifigCollection:
+    get:
+      description: ''
+      summary: getMinifigCollection
+      operationId: getMinifigCollection1
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: query
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/GetMinifigCollection'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetMinifigCollectionSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+    post:
+      description: ''
+      summary: getMinifigCollection
+      operationId: getMinifigCollection2
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: formData
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/GetMinifigCollection'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetMinifigCollectionSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /getThemes:
+    post:
+      description: ''
+      summary: getThemes
+      operationId: getThemes
+      produces:
+      - application/json
+      parameters:
+      - name: getThemesSoapIn
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/GetThemesSoapIn'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetThemesSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  //getThemes:
+    get:
+      description: ''
+      summary: getThemes
+      operationId: getThemes1
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: query
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/GetThemes'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetThemesSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+    post:
+      description: ''
+      summary: getThemes
+      operationId: getThemes2
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: formData
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/GetThemes'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetThemesSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /getSubthemes:
+    post:
+      description: ''
+      summary: getSubthemes
+      operationId: getSubthemes
+      produces:
+      - application/json
+      parameters:
+      - name: getSubthemesSoapIn
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/GetSubthemesSoapIn'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetSubthemesSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  //getSubthemes:
+    get:
+      description: ''
+      summary: getSubthemes
+      operationId: getSubthemes1
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: query
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/GetSubthemes'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetSubthemesSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+    post:
+      description: ''
+      summary: getSubthemes
+      operationId: getSubthemes2
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: formData
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/GetSubthemes'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetSubthemesSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /getYears:
+    post:
+      description: ''
+      summary: getYears
+      operationId: getYears
+      produces:
+      - application/json
+      parameters:
+      - name: getYearsSoapIn
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/GetYearsSoapIn'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetYearsSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  //getYears:
+    get:
+      description: ''
+      summary: getYears
+      operationId: getYears1
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: query
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/GetYears'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetYearsSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+    post:
+      description: ''
+      summary: getYears
+      operationId: getYears2
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: formData
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/GetYears'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetYearsSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /getThemesForUser:
+    post:
+      description: ''
+      summary: getThemesForUser
+      operationId: getThemesForUser
+      produces:
+      - application/json
+      parameters:
+      - name: getThemesForUserSoapIn
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/GetThemesForUserSoapIn'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetThemesForUserSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  //getThemesForUser:
+    get:
+      description: ''
+      summary: getThemesForUser
+      operationId: getThemesForUser1
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: query
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/GetThemesForUser'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetThemesForUserSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+    post:
+      description: ''
+      summary: getThemesForUser
+      operationId: getThemesForUser2
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: formData
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/GetThemesForUser'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetThemesForUserSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /getSubthemesForUser:
+    post:
+      description: ''
+      summary: getSubthemesForUser
+      operationId: getSubthemesForUser
+      produces:
+      - application/json
+      parameters:
+      - name: getSubthemesForUserSoapIn
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/GetSubthemesForUserSoapIn'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetSubthemesForUserSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  //getSubthemesForUser:
+    get:
+      description: ''
+      summary: getSubthemesForUser
+      operationId: getSubthemesForUser1
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: query
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/GetSubthemesForUser'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetSubthemesForUserSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+    post:
+      description: ''
+      summary: getSubthemesForUser
+      operationId: getSubthemesForUser2
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: formData
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/GetSubthemesForUser'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetSubthemesForUserSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /getYearsForUser:
+    post:
+      description: ''
+      summary: getYearsForUser
+      operationId: getYearsForUser
+      produces:
+      - application/json
+      parameters:
+      - name: getYearsForUserSoapIn
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/GetYearsForUserSoapIn'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetYearsForUserSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  //getYearsForUser:
+    get:
+      description: ''
+      summary: getYearsForUser
+      operationId: getYearsForUser1
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: query
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/GetYearsForUser'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetYearsForUserSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+    post:
+      description: ''
+      summary: getYearsForUser
+      operationId: getYearsForUser2
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: formData
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/GetYearsForUser'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetYearsForUserSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /getUserNotes:
+    post:
+      description: ''
+      summary: getUserNotes
+      operationId: getUserNotes
+      produces:
+      - application/json
+      parameters:
+      - name: getUserNotesSoapIn
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/GetUserNotesSoapIn'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetUserNotesSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  //getUserNotes:
+    get:
+      description: ''
+      summary: getUserNotes
+      operationId: getUserNotes1
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: query
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/GetUserNotes'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetUserNotesSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+    post:
+      description: ''
+      summary: getUserNotes
+      operationId: getUserNotes2
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: formData
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/GetUserNotes'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetUserNotesSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /getCollectionTotals:
+    post:
+      description: ''
+      summary: getCollectionTotals
+      operationId: getCollectionTotals
+      produces:
+      - application/json
+      parameters:
+      - name: getCollectionTotalsSoapIn
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/GetCollectionTotalsSoapIn'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetCollectionTotalsSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  //getCollectionTotals:
+    get:
+      description: ''
+      summary: getCollectionTotals
+      operationId: getCollectionTotals1
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: query
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/GetCollectionTotals'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetCollectionTotalsSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+    post:
+      description: ''
+      summary: getCollectionTotals
+      operationId: getCollectionTotals2
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: formData
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/GetCollectionTotals'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetCollectionTotalsSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /setCollection:
+    post:
+      description: ''
+      summary: setCollection
+      operationId: setCollection
+      produces:
+      - application/json
+      parameters:
+      - name: setCollectionSoapIn
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/SetCollectionSoapIn'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/SetCollectionSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  //setCollection:
+    get:
+      description: ''
+      summary: setCollection
+      operationId: setCollection1
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: query
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/SetCollection'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/SetCollectionSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+    post:
+      description: ''
+      summary: setCollection
+      operationId: setCollection2
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: formData
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/SetCollection'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/SetCollectionSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /setCollection_owns:
+    post:
+      description: ''
+      summary: setCollection_owns
+      operationId: setCollection_owns
+      produces:
+      - application/json
+      parameters:
+      - name: setCollection_ownsSoapIn
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/SetcollectionOwnssoapin'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/SetcollectionOwnssoapout'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  //setCollection_owns:
+    get:
+      description: ''
+      summary: setCollection_owns
+      operationId: setCollection_owns1
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: query
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/SetcollectionOwns'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/SetcollectionOwnssoapout'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+    post:
+      description: ''
+      summary: setCollection_owns
+      operationId: setCollection_owns2
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: formData
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/SetcollectionOwns'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/SetcollectionOwnssoapout'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /setCollection_wants:
+    post:
+      description: ''
+      summary: setCollection_wants
+      operationId: setCollection_wants
+      produces:
+      - application/json
+      parameters:
+      - name: setCollection_wantsSoapIn
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/SetcollectionWantssoapin'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/SetcollectionWantssoapout'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  //setCollection_wants:
+    get:
+      description: ''
+      summary: setCollection_wants
+      operationId: setCollection_wants1
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: query
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/SetcollectionWants'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/SetcollectionWantssoapout'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+    post:
+      description: ''
+      summary: setCollection_wants
+      operationId: setCollection_wants2
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: formData
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/SetcollectionWants'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/SetcollectionWantssoapout'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /setCollection_userNotes:
+    post:
+      description: ''
+      summary: setCollection_userNotes
+      operationId: setCollection_userNotes
+      produces:
+      - application/json
+      parameters:
+      - name: setCollection_userNotesSoapIn
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/SetcollectionUsernotessoapin'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/SetcollectionUsernotessoapout'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  //setCollection_userNotes:
+    get:
+      description: ''
+      summary: setCollection_userNotes
+      operationId: setCollection_userNotes1
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: query
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/SetcollectionUsernotes'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/SetcollectionUsernotessoapout'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+    post:
+      description: ''
+      summary: setCollection_userNotes
+      operationId: setCollection_userNotes2
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: formData
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/SetcollectionUsernotes'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/SetcollectionUsernotessoapout'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /setCollection_qtyOwned:
+    post:
+      description: ''
+      summary: setCollection_qtyOwned
+      operationId: setCollection_qtyOwned
+      produces:
+      - application/json
+      parameters:
+      - name: setCollection_qtyOwnedSoapIn
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/SetcollectionQtyownedsoapin'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/SetcollectionQtyownedsoapout'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  //setCollection_qtyOwned:
+    get:
+      description: ''
+      summary: setCollection_qtyOwned
+      operationId: setCollection_qtyOwned1
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: query
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/SetcollectionQtyowned'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/SetcollectionQtyownedsoapout'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+    post:
+      description: ''
+      summary: setCollection_qtyOwned
+      operationId: setCollection_qtyOwned2
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: formData
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/SetcollectionQtyowned'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/SetcollectionQtyownedsoapout'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /setMinifigCollection:
+    post:
+      description: ''
+      summary: setMinifigCollection
+      operationId: setMinifigCollection
+      produces:
+      - application/json
+      parameters:
+      - name: setMinifigCollectionSoapIn
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/SetMinifigCollectionSoapIn'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/SetMinifigCollectionSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  //setMinifigCollection:
+    get:
+      description: ''
+      summary: setMinifigCollection
+      operationId: setMinifigCollection1
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: query
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/SetMinifigCollection'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/SetMinifigCollectionSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+    post:
+      description: ''
+      summary: setMinifigCollection
+      operationId: setMinifigCollection2
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: formData
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/SetMinifigCollection'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/SetMinifigCollectionSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /login:
+    post:
+      description: ''
+      summary: login
+      operationId: login
+      produces:
+      - application/json
+      parameters:
+      - name: loginSoapIn
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/LoginSoapIn'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/LoginSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  //login:
+    get:
+      description: ''
+      summary: login
+      operationId: login1
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: query
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/Login'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/LoginSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+    post:
+      description: ''
+      summary: login
+      operationId: login2
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: formData
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/Login'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/LoginSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /setCollectionDetail:
+    post:
+      description: ''
+      summary: setCollectionDetail
+      operationId: setCollectionDetail
+      produces:
+      - application/json
+      parameters:
+      - name: setCollectionDetailSoapIn
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/SetCollectionDetailSoapIn'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/SetCollectionDetailSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /getCollectionDetail:
+    post:
+      description: ''
+      summary: getCollectionDetail
+      operationId: getCollectionDetail
+      produces:
+      - application/json
+      parameters:
+      - name: getCollectionDetailSoapIn
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/GetCollectionDetailSoapIn'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetCollectionDetailSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  //getCollectionDetail:
+    get:
+      description: ''
+      summary: getCollectionDetail
+      operationId: getCollectionDetail1
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: query
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/GetCollectionDetail'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetCollectionDetailSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+    post:
+      description: ''
+      summary: getCollectionDetail
+      operationId: getCollectionDetail2
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: formData
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/GetCollectionDetail'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetCollectionDetailSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /getCollectionDetailConditions:
+    post:
+      description: ''
+      summary: getCollectionDetailConditions
+      operationId: getCollectionDetailConditions
+      produces:
+      - application/json
+      parameters:
+      - name: getCollectionDetailConditionsSoapIn
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/GetCollectionDetailConditionsSoapIn'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetCollectionDetailConditionsSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  //getCollectionDetailConditions:
+    get:
+      description: ''
+      summary: getCollectionDetailConditions
+      operationId: getCollectionDetailConditions1
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: query
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/GetCollectionDetailConditions'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetCollectionDetailConditionsSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+    post:
+      description: ''
+      summary: getCollectionDetailConditions
+      operationId: getCollectionDetailConditions2
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: formData
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/GetCollectionDetailConditions'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetCollectionDetailConditionsSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /checkKey:
+    post:
+      description: ''
+      summary: checkKey
+      operationId: checkKey
+      produces:
+      - application/json
+      parameters:
+      - name: checkKeySoapIn
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/CheckKeySoapIn'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/CheckKeySoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  //checkKey:
+    get:
+      description: ''
+      summary: checkKey
+      operationId: checkKey1
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: query
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/CheckKey'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/CheckKeySoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+    post:
+      description: ''
+      summary: checkKey
+      operationId: checkKey2
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: formData
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/CheckKey'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/CheckKeySoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /checkUserHash:
+    post:
+      description: ''
+      summary: checkUserHash
+      operationId: checkUserHash
+      produces:
+      - application/json
+      parameters:
+      - name: checkUserHashSoapIn
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/CheckUserHashSoapIn'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/CheckUserHashSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  //checkUserHash:
+    get:
+      description: ''
+      summary: checkUserHash
+      operationId: checkUserHash1
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: query
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/CheckUserHash'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/CheckUserHashSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+    post:
+      description: ''
+      summary: checkUserHash
+      operationId: checkUserHash2
+      produces:
+      - application/json
+      parameters:
+      - name: parameters
+        in: formData
+        required: true
+        type: string
+        description: ''
+        schema:
+          $ref: '#/definitions/CheckUserHash'
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/CheckUserHashSoapOut'
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+definitions:
+  GetSets:
+    title: getSets
+    description: ''
+    type: object
+    properties:
+      apiKey:
+        description: ''
+        type: string
+      userHash:
+        description: ''
+        type: string
+      query:
+        description: ''
+        type: string
+      theme:
+        description: ''
+        type: string
+      subtheme:
+        description: ''
+        type: string
+      setNumber:
+        description: ''
+        type: string
+      year:
+        description: ''
+        type: string
+      owned:
+        description: ''
+        type: string
+      wanted:
+        description: ''
+        type: string
+      orderBy:
+        description: ''
+        type: string
+      pageSize:
+        description: ''
+        type: string
+      pageNumber:
+        description: ''
+        type: string
+      userName:
+        description: ''
+        type: string
+  Sets:
+    title: sets
+    description: ''
+    type: object
+    properties:
+      setID:
+        description: ''
+        type: integer
+        format: int32
+      numberVariant:
+        description: ''
+        type: integer
+        format: int32
+      image:
+        description: ''
+        type: boolean
+      released:
+        description: ''
+        type: boolean
+      owned:
+        description: ''
+        type: boolean
+      wanted:
+        description: ''
+        type: boolean
+      qtyOwned:
+        description: ''
+        type: integer
+        format: int32
+      ACMDataCount:
+        description: ''
+        type: integer
+        format: int32
+      ownedByTotal:
+        description: ''
+        type: integer
+        format: int32
+      wantedByTotal:
+        description: ''
+        type: integer
+        format: int32
+      rating:
+        description: ''
+        type: number
+        format: double
+      reviewCount:
+        description: ''
+        type: integer
+        format: int32
+      instructionsCount:
+        description: ''
+        type: integer
+        format: int32
+      additionalImageCount:
+        description: ''
+        type: integer
+        format: int32
+      lastUpdated:
+        description: ''
+        type: string
+        format: date-time
+      number:
+        description: ''
+        type: string
+      name:
+        description: ''
+        type: string
+      year:
+        description: ''
+        type: string
+      theme:
+        description: ''
+        type: string
+      themeGroup:
+        description: ''
+        type: string
+      subtheme:
+        description: ''
+        type: string
+      pieces:
+        description: ''
+        type: string
+      minifigs:
+        description: ''
+        type: string
+      imageFilename:
+        description: ''
+        type: string
+      thumbnailURL:
+        description: ''
+        type: string
+      largeThumbnailURL:
+        description: ''
+        type: string
+      imageURL:
+        description: ''
+        type: string
+      bricksetURL:
+        description: ''
+        type: string
+      userNotes:
+        description: ''
+        type: string
+      UKRetailPrice:
+        description: ''
+        type: string
+      USRetailPrice:
+        description: ''
+        type: string
+      CARetailPrice:
+        description: ''
+        type: string
+      EURetailPrice:
+        description: ''
+        type: string
+      USDateAddedToSAH:
+        description: ''
+        type: string
+      USDateRemovedFromSAH:
+        description: ''
+        type: string
+      packagingType:
+        description: ''
+        type: string
+      availability:
+        description: ''
+        type: string
+      EAN:
+        description: ''
+        type: string
+      UPC:
+        description: ''
+        type: string
+      description:
+        description: ''
+        type: string
+    required:
+    - setID
+    - numberVariant
+    - image
+    - released
+    - owned
+    - wanted
+    - qtyOwned
+    - ACMDataCount
+    - ownedByTotal
+    - wantedByTotal
+    - rating
+    - reviewCount
+    - instructionsCount
+    - additionalImageCount
+    - lastUpdated
+  ArrayOfSets:
+    title: ArrayOfSets
+    description: ''
+    type: object
+    properties:
+      sets:
+        description: ''
+        type: array
+        items:
+          $ref: '#/definitions/Sets'
+  GetSetsResponse:
+    title: getSetsResponse
+    description: ''
+    type: object
+    properties:
+      getSetsResult:
+        $ref: '#/definitions/ArrayOfSets'
+  GetSet:
+    title: getSet
+    description: ''
+    type: object
+    properties:
+      apiKey:
+        description: ''
+        type: string
+      userHash:
+        description: ''
+        type: string
+      SetID:
+        description: ''
+        type: string
+  GetSetResponse:
+    title: getSetResponse
+    description: ''
+    type: object
+    properties:
+      getSetResult:
+        $ref: '#/definitions/ArrayOfSets'
+  GetRecentlyUpdatedSets:
+    title: getRecentlyUpdatedSets
+    description: ''
+    type: object
+    properties:
+      minutesAgo:
+        description: ''
+        type: integer
+        format: int32
+      apiKey:
+        description: ''
+        type: string
+    required:
+    - minutesAgo
+  GetRecentlyUpdatedSetsResponse:
+    title: getRecentlyUpdatedSetsResponse
+    description: ''
+    type: object
+    properties:
+      getRecentlyUpdatedSetsResult:
+        $ref: '#/definitions/ArrayOfSets'
+  GetAdditionalImages:
+    title: getAdditionalImages
+    description: ''
+    type: object
+    properties:
+      setID:
+        description: ''
+        type: integer
+        format: int32
+      apiKey:
+        description: ''
+        type: string
+    required:
+    - setID
+  AdditionalImages:
+    title: additionalImages
+    description: ''
+    type: object
+    properties:
+      thumbnailURL:
+        description: ''
+        type: string
+      largeThumbnailURL:
+        description: ''
+        type: string
+      imageURL:
+        description: ''
+        type: string
+  ArrayOfAdditionalImages:
+    title: ArrayOfAdditionalImages
+    description: ''
+    type: object
+    properties:
+      additionalImages:
+        description: ''
+        type: array
+        items:
+          $ref: '#/definitions/AdditionalImages'
+  GetAdditionalImagesResponse:
+    title: getAdditionalImagesResponse
+    description: ''
+    type: object
+    properties:
+      getAdditionalImagesResult:
+        $ref: '#/definitions/ArrayOfAdditionalImages'
+  GetReviews:
+    title: getReviews
+    description: ''
+    type: object
+    properties:
+      setID:
+        description: ''
+        type: integer
+        format: int32
+      apiKey:
+        description: ''
+        type: string
+    required:
+    - setID
+  Reviews:
+    title: reviews
+    description: ''
+    type: object
+    properties:
+      datePosted:
+        description: ''
+        type: string
+        format: date-time
+      overallRating:
+        description: ''
+        type: integer
+        format: int32
+      parts:
+        description: ''
+        type: integer
+        format: int32
+      buildingExperience:
+        description: ''
+        type: integer
+        format: int32
+      playability:
+        description: ''
+        type: integer
+        format: int32
+      valueForMoney:
+        description: ''
+        type: integer
+        format: int32
+      HTML:
+        description: ''
+        type: boolean
+      author:
+        description: ''
+        type: string
+      title:
+        description: ''
+        type: string
+      review:
+        description: ''
+        type: string
+    required:
+    - datePosted
+    - overallRating
+    - parts
+    - buildingExperience
+    - playability
+    - valueForMoney
+    - HTML
+  ArrayOfReviews:
+    title: ArrayOfReviews
+    description: ''
+    type: object
+    properties:
+      reviews:
+        description: ''
+        type: array
+        items:
+          $ref: '#/definitions/Reviews'
+  GetReviewsResponse:
+    title: getReviewsResponse
+    description: ''
+    type: object
+    properties:
+      getReviewsResult:
+        $ref: '#/definitions/ArrayOfReviews'
+  GetInstructions:
+    title: getInstructions
+    description: ''
+    type: object
+    properties:
+      setID:
+        description: ''
+        type: integer
+        format: int32
+      apiKey:
+        description: ''
+        type: string
+    required:
+    - setID
+  Instructions:
+    title: instructions
+    description: ''
+    type: object
+    properties:
+      URL:
+        description: ''
+        type: string
+      description:
+        description: ''
+        type: string
+  ArrayOfInstructions:
+    title: ArrayOfInstructions
+    description: ''
+    type: object
+    properties:
+      instructions:
+        description: ''
+        type: array
+        items:
+          $ref: '#/definitions/Instructions'
+  GetInstructionsResponse:
+    title: getInstructionsResponse
+    description: ''
+    type: object
+    properties:
+      getInstructionsResult:
+        $ref: '#/definitions/ArrayOfInstructions'
+  GetMinifigCollection:
+    title: getMinifigCollection
+    description: ''
+    type: object
+    properties:
+      apiKey:
+        description: ''
+        type: string
+      userHash:
+        description: ''
+        type: string
+      query:
+        description: ''
+        type: string
+      owned:
+        description: ''
+        type: string
+      wanted:
+        description: ''
+        type: string
+  MinifigCollection:
+    title: minifigCollection
+    description: ''
+    type: object
+    properties:
+      ownedInSets:
+        description: ''
+        type: integer
+        format: int32
+      ownedLoose:
+        description: ''
+        type: integer
+        format: int32
+      ownedTotal:
+        description: ''
+        type: integer
+        format: int32
+      wanted:
+        description: ''
+        type: boolean
+      minifigNumber:
+        description: ''
+        type: string
+    required:
+    - ownedInSets
+    - ownedLoose
+    - ownedTotal
+    - wanted
+  ArrayOfMinifigCollection:
+    title: ArrayOfMinifigCollection
+    description: ''
+    type: object
+    properties:
+      minifigCollection:
+        description: ''
+        type: array
+        items:
+          $ref: '#/definitions/MinifigCollection'
+  GetMinifigCollectionResponse:
+    title: getMinifigCollectionResponse
+    description: ''
+    type: object
+    properties:
+      getMinifigCollectionResult:
+        $ref: '#/definitions/ArrayOfMinifigCollection'
+  GetThemes:
+    title: getThemes
+    description: ''
+    type: object
+    properties:
+      apiKey:
+        description: ''
+        type: string
+  Themes:
+    title: themes
+    description: ''
+    type: object
+    properties:
+      setCount:
+        description: ''
+        type: integer
+        format: int32
+      subthemeCount:
+        description: ''
+        type: integer
+        format: int32
+      yearFrom:
+        description: ''
+        type: integer
+        format: int32
+      yearTo:
+        description: ''
+        type: integer
+        format: int32
+      theme:
+        description: ''
+        type: string
+    required:
+    - setCount
+    - subthemeCount
+    - yearFrom
+    - yearTo
+  ArrayOfThemes:
+    title: ArrayOfThemes
+    description: ''
+    type: object
+    properties:
+      themes:
+        description: ''
+        type: array
+        items:
+          $ref: '#/definitions/Themes'
+  GetThemesResponse:
+    title: getThemesResponse
+    description: ''
+    type: object
+    properties:
+      getThemesResult:
+        $ref: '#/definitions/ArrayOfThemes'
+  GetSubthemes:
+    title: getSubthemes
+    description: ''
+    type: object
+    properties:
+      apiKey:
+        description: ''
+        type: string
+      theme:
+        description: ''
+        type: string
+  Subthemes:
+    title: subthemes
+    description: ''
+    type: object
+    properties:
+      setCount:
+        description: ''
+        type: integer
+        format: int32
+      yearFrom:
+        description: ''
+        type: integer
+        format: int32
+      yearTo:
+        description: ''
+        type: integer
+        format: int32
+      theme:
+        description: ''
+        type: string
+      subtheme:
+        description: ''
+        type: string
+    required:
+    - setCount
+    - yearFrom
+    - yearTo
+  ArrayOfSubthemes:
+    title: ArrayOfSubthemes
+    description: ''
+    type: object
+    properties:
+      subthemes:
+        description: ''
+        type: array
+        items:
+          $ref: '#/definitions/Subthemes'
+  GetSubthemesResponse:
+    title: getSubthemesResponse
+    description: ''
+    type: object
+    properties:
+      getSubthemesResult:
+        $ref: '#/definitions/ArrayOfSubthemes'
+  GetYears:
+    title: getYears
+    description: ''
+    type: object
+    properties:
+      apiKey:
+        description: ''
+        type: string
+      theme:
+        description: ''
+        type: string
+  Years:
+    title: years
+    description: ''
+    type: object
+    properties:
+      setCount:
+        description: ''
+        type: integer
+        format: int32
+      theme:
+        description: ''
+        type: string
+      year:
+        description: ''
+        type: string
+    required:
+    - setCount
+  ArrayOfYears:
+    title: ArrayOfYears
+    description: ''
+    type: object
+    properties:
+      years:
+        description: ''
+        type: array
+        items:
+          $ref: '#/definitions/Years'
+  GetYearsResponse:
+    title: getYearsResponse
+    description: ''
+    type: object
+    properties:
+      getYearsResult:
+        $ref: '#/definitions/ArrayOfYears'
+  GetThemesForUser:
+    title: getThemesForUser
+    description: ''
+    type: object
+    properties:
+      apiKey:
+        description: ''
+        type: string
+      userHash:
+        description: ''
+        type: string
+      owned:
+        description: ''
+        type: string
+      wanted:
+        description: ''
+        type: string
+  GetThemesForUserResponse:
+    title: getThemesForUserResponse
+    description: ''
+    type: object
+    properties:
+      getThemesForUserResult:
+        $ref: '#/definitions/ArrayOfThemes'
+  GetSubthemesForUser:
+    title: getSubthemesForUser
+    description: ''
+    type: object
+    properties:
+      apiKey:
+        description: ''
+        type: string
+      theme:
+        description: ''
+        type: string
+      userHash:
+        description: ''
+        type: string
+      owned:
+        description: ''
+        type: string
+      wanted:
+        description: ''
+        type: string
+  GetSubthemesForUserResponse:
+    title: getSubthemesForUserResponse
+    description: ''
+    type: object
+    properties:
+      getSubthemesForUserResult:
+        $ref: '#/definitions/ArrayOfSubthemes'
+  GetYearsForUser:
+    title: getYearsForUser
+    description: ''
+    type: object
+    properties:
+      apiKey:
+        description: ''
+        type: string
+      theme:
+        description: ''
+        type: string
+      userHash:
+        description: ''
+        type: string
+      owned:
+        description: ''
+        type: string
+      wanted:
+        description: ''
+        type: string
+  GetYearsForUserResponse:
+    title: getYearsForUserResponse
+    description: ''
+    type: object
+    properties:
+      getYearsForUserResult:
+        $ref: '#/definitions/ArrayOfYears'
+  GetUserNotes:
+    title: getUserNotes
+    description: ''
+    type: object
+    properties:
+      apiKey:
+        description: ''
+        type: string
+      userHash:
+        description: ''
+        type: string
+  UserNotes:
+    title: userNotes
+    description: ''
+    type: object
+    properties:
+      setID:
+        description: ''
+        type: integer
+        format: int32
+      userNotes:
+        description: ''
+        type: string
+    required:
+    - setID
+  ArrayOfUserNotes:
+    title: ArrayOfUserNotes
+    description: ''
+    type: object
+    properties:
+      userNotes:
+        description: ''
+        type: array
+        items:
+          $ref: '#/definitions/UserNotes'
+  GetUserNotesResponse:
+    title: getUserNotesResponse
+    description: ''
+    type: object
+    properties:
+      getUserNotesResult:
+        $ref: '#/definitions/ArrayOfUserNotes'
+  GetCollectionTotals:
+    title: getCollectionTotals
+    description: ''
+    type: object
+    properties:
+      apiKey:
+        description: ''
+        type: string
+      userHash:
+        description: ''
+        type: string
+  CollectionTotals:
+    title: collectionTotals
+    description: ''
+    type: object
+    properties:
+      totalSetsOwned:
+        description: ''
+        type: integer
+        format: int32
+      totalDistinctSetsOwned:
+        description: ''
+        type: integer
+        format: int32
+      totalSetsWanted:
+        description: ''
+        type: integer
+        format: int32
+      totalMinifigsOwned:
+        description: ''
+        type: integer
+        format: int32
+      totalMinifigsWanted:
+        description: ''
+        type: integer
+        format: int32
+    required:
+    - totalSetsOwned
+    - totalDistinctSetsOwned
+    - totalSetsWanted
+    - totalMinifigsOwned
+    - totalMinifigsWanted
+  GetCollectionTotalsResponse:
+    title: getCollectionTotalsResponse
+    description: ''
+    type: object
+    properties:
+      getCollectionTotalsResult:
+        $ref: '#/definitions/CollectionTotals'
+  SetCollection:
+    title: setCollection
+    description: ''
+    type: object
+    properties:
+      setID:
+        description: ''
+        type: integer
+        format: int32
+      qtyOwned:
+        description: ''
+        type: integer
+        format: int32
+      wanted:
+        description: ''
+        type: integer
+        format: int32
+      apiKey:
+        description: ''
+        type: string
+      userHash:
+        description: ''
+        type: string
+    required:
+    - setID
+    - qtyOwned
+    - wanted
+  SetCollectionResponse:
+    title: setCollectionResponse
+    description: ''
+    type: object
+    properties:
+      setCollectionResult:
+        description: ''
+        type: string
+  SetcollectionOwns:
+    title: setCollection_owns
+    description: ''
+    type: object
+    properties:
+      setID:
+        description: ''
+        type: integer
+        format: int32
+      owned:
+        description: ''
+        type: integer
+        format: int32
+      apiKey:
+        description: ''
+        type: string
+      userHash:
+        description: ''
+        type: string
+    required:
+    - setID
+    - owned
+  SetcollectionOwnsresponse:
+    title: setCollection_ownsResponse
+    description: ''
+    type: object
+    properties:
+      setCollection_ownsResult:
+        description: ''
+        type: string
+  SetcollectionWants:
+    title: setCollection_wants
+    description: ''
+    type: object
+    properties:
+      setID:
+        description: ''
+        type: integer
+        format: int32
+      wanted:
+        description: ''
+        type: integer
+        format: int32
+      apiKey:
+        description: ''
+        type: string
+      userHash:
+        description: ''
+        type: string
+    required:
+    - setID
+    - wanted
+  SetcollectionWantsresponse:
+    title: setCollection_wantsResponse
+    description: ''
+    type: object
+    properties:
+      setCollection_wantsResult:
+        description: ''
+        type: string
+  SetcollectionUsernotes:
+    title: setCollection_userNotes
+    description: ''
+    type: object
+    properties:
+      setID:
+        description: ''
+        type: integer
+        format: int32
+      apiKey:
+        description: ''
+        type: string
+      userHash:
+        description: ''
+        type: string
+      notes:
+        description: ''
+        type: string
+    required:
+    - setID
+  SetcollectionUsernotesresponse:
+    title: setCollection_userNotesResponse
+    description: ''
+    type: object
+    properties:
+      setCollection_userNotesResult:
+        description: ''
+        type: string
+  SetcollectionQtyowned:
+    title: setCollection_qtyOwned
+    description: ''
+    type: object
+    properties:
+      setID:
+        description: ''
+        type: integer
+        format: int32
+      qtyOwned:
+        description: ''
+        type: integer
+        format: int32
+      apiKey:
+        description: ''
+        type: string
+      userHash:
+        description: ''
+        type: string
+    required:
+    - setID
+    - qtyOwned
+  SetcollectionQtyownedresponse:
+    title: setCollection_qtyOwnedResponse
+    description: ''
+    type: object
+    properties:
+      setCollection_qtyOwnedResult:
+        description: ''
+        type: string
+  SetMinifigCollection:
+    title: setMinifigCollection
+    description: ''
+    type: object
+    properties:
+      qtyOwned:
+        description: ''
+        type: integer
+        format: int32
+      wanted:
+        description: ''
+        type: integer
+        format: int32
+      apiKey:
+        description: ''
+        type: string
+      userHash:
+        description: ''
+        type: string
+      minifigNumber:
+        description: ''
+        type: string
+    required:
+    - qtyOwned
+    - wanted
+  SetMinifigCollectionResponse:
+    title: setMinifigCollectionResponse
+    description: ''
+    type: object
+    properties:
+      setMinifigCollectionResult:
+        description: ''
+        type: string
+  Login:
+    title: login
+    description: ''
+    type: object
+    properties:
+      apiKey:
+        description: ''
+        type: string
+      username:
+        description: ''
+        type: string
+      password:
+        description: ''
+        type: string
+  LoginResponse:
+    title: loginResponse
+    description: ''
+    type: object
+    properties:
+      loginResult:
+        description: ''
+        type: string
+  CollectionDetails:
+    title: collectionDetails
+    description: ''
+    type: object
+    properties:
+      collectionID:
+        description: ''
+        type: integer
+        format: int32
+      pricePaid:
+        description: ''
+        type: number
+        format: double
+      additionalPricePaid:
+        description: ''
+        type: number
+        format: double
+      currentEstimatedValue:
+        description: ''
+        type: number
+        format: double
+      parts:
+        description: ''
+        type: boolean
+      minifigs:
+        description: ''
+        type: boolean
+      instructions:
+        $ref: '#/definitions/Instructions'
+      box:
+        description: ''
+        type: boolean
+      willTrade:
+        description: ''
+        type: boolean
+      modified:
+        description: ''
+        type: boolean
+      deleted:
+        description: ''
+        type: boolean
+      dateAcquired:
+        description: ''
+        type: string
+      currency:
+        description: ''
+        type: string
+      conditionWhenAcquired:
+        description: ''
+        type: string
+      acquiredFrom:
+        description: ''
+        type: string
+      conditionNow:
+        description: ''
+        type: string
+      location:
+        description: ''
+        type: string
+      notes:
+        description: ''
+        type: string
+    required:
+    - collectionID
+    - pricePaid
+    - additionalPricePaid
+    - currentEstimatedValue
+    - parts
+    - minifigs
+    - instructions
+    - box
+    - willTrade
+    - modified
+    - deleted
+  SetCollectionDetail:
+    title: setCollectionDetail
+    description: ''
+    type: object
+    properties:
+      apiKey:
+        description: ''
+        type: string
+      userHash:
+        description: ''
+        type: string
+      detail:
+        $ref: '#/definitions/CollectionDetails'
+  SetCollectionDetailResponse:
+    title: setCollectionDetailResponse
+    description: ''
+    type: object
+    properties:
+      setCollectionDetailResult:
+        description: ''
+        type: string
+  GetCollectionDetail:
+    title: getCollectionDetail
+    description: ''
+    type: object
+    properties:
+      apiKey:
+        description: ''
+        type: string
+      userHash:
+        description: ''
+        type: string
+      SetID:
+        description: ''
+        type: string
+  ArrayOfCollectionDetails:
+    title: ArrayOfCollectionDetails
+    description: ''
+    type: object
+    properties:
+      collectionDetails:
+        $ref: '#/definitions/CollectionDetails'
+    required:
+    - collectionDetails
+  GetCollectionDetailResponse:
+    title: getCollectionDetailResponse
+    description: ''
+    type: object
+    properties:
+      getCollectionDetailResult:
+        $ref: '#/definitions/ArrayOfCollectionDetails'
+  GetCollectionDetailConditions:
+    title: getCollectionDetailConditions
+    description: ''
+    type: object
+    properties:
+      apiKey:
+        description: ''
+        type: string
+      which:
+        description: ''
+        type: string
+  Conditions:
+    title: conditions
+    description: ''
+    type: object
+    properties:
+      condition:
+        description: ''
+        type: string
+  ArrayOfConditions:
+    title: ArrayOfConditions
+    description: ''
+    type: object
+    properties:
+      conditions:
+        description: ''
+        type: array
+        items:
+          $ref: '#/definitions/Conditions'
+  GetCollectionDetailConditionsResponse:
+    title: getCollectionDetailConditionsResponse
+    description: ''
+    type: object
+    properties:
+      getCollectionDetailConditionsResult:
+        $ref: '#/definitions/ArrayOfConditions'
+  CheckKey:
+    title: checkKey
+    description: ''
+    type: object
+    properties:
+      apiKey:
+        description: ''
+        type: string
+  CheckKeyResponse:
+    title: checkKeyResponse
+    description: ''
+    type: object
+    properties:
+      checkKeyResult:
+        description: ''
+        type: string
+  CheckUserHash:
+    title: checkUserHash
+    description: ''
+    type: object
+    properties:
+      userHash:
+        description: ''
+        type: string
+  CheckUserHashResponse:
+    title: checkUserHashResponse
+    description: ''
+    type: object
+    properties:
+      checkUserHashResult:
+        description: ''
+        type: string
+  GetSetsSoapOut:
+    title: getSetsSoapOut
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/GetSetsResponse'
+    required:
+    - parameters
+  GetSetsSoapIn:
+    title: getSetsSoapIn
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/GetSets'
+    required:
+    - parameters
+  GetSetSoapOut:
+    title: getSetSoapOut
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/GetSetResponse'
+    required:
+    - parameters
+  GetSetSoapIn:
+    title: getSetSoapIn
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/GetSet'
+    required:
+    - parameters
+  GetRecentlyUpdatedSetsSoapOut:
+    title: getRecentlyUpdatedSetsSoapOut
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/GetRecentlyUpdatedSetsResponse'
+    required:
+    - parameters
+  GetRecentlyUpdatedSetsSoapIn:
+    title: getRecentlyUpdatedSetsSoapIn
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/GetRecentlyUpdatedSets'
+    required:
+    - parameters
+  GetAdditionalImagesSoapOut:
+    title: getAdditionalImagesSoapOut
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/GetAdditionalImagesResponse'
+    required:
+    - parameters
+  GetAdditionalImagesSoapIn:
+    title: getAdditionalImagesSoapIn
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/GetAdditionalImages'
+    required:
+    - parameters
+  GetReviewsSoapOut:
+    title: getReviewsSoapOut
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/GetReviewsResponse'
+    required:
+    - parameters
+  GetReviewsSoapIn:
+    title: getReviewsSoapIn
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/GetReviews'
+    required:
+    - parameters
+  GetInstructionsSoapOut:
+    title: getInstructionsSoapOut
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/GetInstructionsResponse'
+    required:
+    - parameters
+  GetInstructionsSoapIn:
+    title: getInstructionsSoapIn
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/GetInstructions'
+    required:
+    - parameters
+  GetMinifigCollectionSoapOut:
+    title: getMinifigCollectionSoapOut
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/GetMinifigCollectionResponse'
+    required:
+    - parameters
+  GetMinifigCollectionSoapIn:
+    title: getMinifigCollectionSoapIn
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/GetMinifigCollection'
+    required:
+    - parameters
+  GetThemesSoapOut:
+    title: getThemesSoapOut
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/GetThemesResponse'
+    required:
+    - parameters
+  GetThemesSoapIn:
+    title: getThemesSoapIn
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/GetThemes'
+    required:
+    - parameters
+  GetSubthemesSoapOut:
+    title: getSubthemesSoapOut
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/GetSubthemesResponse'
+    required:
+    - parameters
+  GetSubthemesSoapIn:
+    title: getSubthemesSoapIn
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/GetSubthemes'
+    required:
+    - parameters
+  GetYearsSoapOut:
+    title: getYearsSoapOut
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/GetYearsResponse'
+    required:
+    - parameters
+  GetYearsSoapIn:
+    title: getYearsSoapIn
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/GetYears'
+    required:
+    - parameters
+  GetThemesForUserSoapOut:
+    title: getThemesForUserSoapOut
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/GetThemesForUserResponse'
+    required:
+    - parameters
+  GetThemesForUserSoapIn:
+    title: getThemesForUserSoapIn
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/GetThemesForUser'
+    required:
+    - parameters
+  GetSubthemesForUserSoapOut:
+    title: getSubthemesForUserSoapOut
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/GetSubthemesForUserResponse'
+    required:
+    - parameters
+  GetSubthemesForUserSoapIn:
+    title: getSubthemesForUserSoapIn
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/GetSubthemesForUser'
+    required:
+    - parameters
+  GetYearsForUserSoapOut:
+    title: getYearsForUserSoapOut
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/GetYearsForUserResponse'
+    required:
+    - parameters
+  GetYearsForUserSoapIn:
+    title: getYearsForUserSoapIn
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/GetYearsForUser'
+    required:
+    - parameters
+  GetUserNotesSoapOut:
+    title: getUserNotesSoapOut
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/GetUserNotesResponse'
+    required:
+    - parameters
+  GetUserNotesSoapIn:
+    title: getUserNotesSoapIn
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/GetUserNotes'
+    required:
+    - parameters
+  GetCollectionTotalsSoapOut:
+    title: getCollectionTotalsSoapOut
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/GetCollectionTotalsResponse'
+    required:
+    - parameters
+  GetCollectionTotalsSoapIn:
+    title: getCollectionTotalsSoapIn
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/GetCollectionTotals'
+    required:
+    - parameters
+  SetCollectionSoapOut:
+    title: setCollectionSoapOut
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/SetCollectionResponse'
+    required:
+    - parameters
+  SetCollectionSoapIn:
+    title: setCollectionSoapIn
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/SetCollection'
+    required:
+    - parameters
+  SetcollectionOwnssoapout:
+    title: setCollection_ownsSoapOut
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/SetcollectionOwnsresponse'
+    required:
+    - parameters
+  SetcollectionOwnssoapin:
+    title: setCollection_ownsSoapIn
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/SetcollectionOwns'
+    required:
+    - parameters
+  SetcollectionWantssoapout:
+    title: setCollection_wantsSoapOut
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/SetcollectionWantsresponse'
+    required:
+    - parameters
+  SetcollectionWantssoapin:
+    title: setCollection_wantsSoapIn
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/SetcollectionWants'
+    required:
+    - parameters
+  SetcollectionUsernotessoapout:
+    title: setCollection_userNotesSoapOut
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/SetcollectionUsernotesresponse'
+    required:
+    - parameters
+  SetcollectionUsernotessoapin:
+    title: setCollection_userNotesSoapIn
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/SetcollectionUsernotes'
+    required:
+    - parameters
+  SetcollectionQtyownedsoapout:
+    title: setCollection_qtyOwnedSoapOut
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/SetcollectionQtyownedresponse'
+    required:
+    - parameters
+  SetcollectionQtyownedsoapin:
+    title: setCollection_qtyOwnedSoapIn
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/SetcollectionQtyowned'
+    required:
+    - parameters
+  SetMinifigCollectionSoapOut:
+    title: setMinifigCollectionSoapOut
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/SetMinifigCollectionResponse'
+    required:
+    - parameters
+  SetMinifigCollectionSoapIn:
+    title: setMinifigCollectionSoapIn
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/SetMinifigCollection'
+    required:
+    - parameters
+  LoginSoapOut:
+    title: loginSoapOut
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/LoginResponse'
+    required:
+    - parameters
+  LoginSoapIn:
+    title: loginSoapIn
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/Login'
+    required:
+    - parameters
+  SetCollectionDetailSoapOut:
+    title: setCollectionDetailSoapOut
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/SetCollectionDetailResponse'
+    required:
+    - parameters
+  SetCollectionDetailSoapIn:
+    title: setCollectionDetailSoapIn
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/SetCollectionDetail'
+    required:
+    - parameters
+  GetCollectionDetailSoapOut:
+    title: getCollectionDetailSoapOut
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/GetCollectionDetailResponse'
+    required:
+    - parameters
+  GetCollectionDetailSoapIn:
+    title: getCollectionDetailSoapIn
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/GetCollectionDetail'
+    required:
+    - parameters
+  GetCollectionDetailConditionsSoapOut:
+    title: getCollectionDetailConditionsSoapOut
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/GetCollectionDetailConditionsResponse'
+    required:
+    - parameters
+  GetCollectionDetailConditionsSoapIn:
+    title: getCollectionDetailConditionsSoapIn
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/GetCollectionDetailConditions'
+    required:
+    - parameters
+  CheckKeySoapOut:
+    title: checkKeySoapOut
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/CheckKeyResponse'
+    required:
+    - parameters
+  CheckKeySoapIn:
+    title: checkKeySoapIn
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/CheckKey'
+    required:
+    - parameters
+  CheckUserHashSoapOut:
+    title: checkUserHashSoapOut
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/CheckUserHashResponse'
+    required:
+    - parameters
+  CheckUserHashSoapIn:
+    title: checkUserHashSoapIn
+    type: object
+    properties:
+      parameters:
+        $ref: '#/definitions/CheckUserHash'
+    required:
+    - parameters
