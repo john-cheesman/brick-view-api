@@ -18,6 +18,26 @@ consumes:
 produces:
   - application/json
 paths:
+  /login:
+    x-swawgger-router-controller: login
+    post:
+      description: Login to a user account
+      operationId: login
+      parameters:
+        - name: loginCredentials
+          in: body
+          description: The account username
+          schema:
+            $ref: "#/definitions/LoginRequest"
+      responses:
+        "200":
+          description: Success
+          schema:
+            $ref: "#/definitions/LoginResponse"
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
   /checkKey:
     x-swagger-router-controller: check_key
     get:
@@ -38,53 +58,32 @@ paths:
           description: Error
           schema:
             $ref: "#/definitions/ErrorResponse"
-      security: []
-      x-unitTests: []
-      x-operation-settings:
-        CollectParameters: false
-        AllowDynamicQueryParameters: false
-        AllowDynamicFormParameters: false
-        IsMultiContentStreaming: false
-  /hello:
-    # binds a127 app logic to a route
-    x-swagger-router-controller: hello_world
-    get:
-      description: Returns 'Hello' to the caller
-      # used as the method name of the controller
-      operationId: hello
-      parameters:
-        - name: name
-          in: query
-          description: The name of the person to whom to say hello
-          required: false
-          type: string
-      responses:
-        "200":
-          description: Success
-          schema:
-            # a pointer to a definition
-            $ref: "#/definitions/HelloWorldResponse"
-        # responses may fall through to errors
-        default:
-          description: Error
-          schema:
-            $ref: "#/definitions/ErrorResponse"
   /swagger:
     x-swagger-pipe: swagger_raw
 # complex objects have schema definitions
 definitions:
+  LoginRequest:
+    type: object
+    required:
+      - username
+      - password
+    properties:
+      username:
+        type: string
+      password:
+        type: string
+  LoginResponse:
+    required:
+      - userHash
+    properties:
+      userHash:
+        type: string
   CheckKeyResponse:
     required:
       - valid
     properties:
       valid:
-        type: bool
-  HelloWorldResponse:
-    required:
-      - message
-    properties:
-      message:
-        type: string
+        type: boolean
   ErrorResponse:
     required:
       - message

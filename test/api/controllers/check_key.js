@@ -4,9 +4,9 @@ var server = require('../../../app');
 
 describe('controllers', function() {
 
-  describe('hello_world', function() {
+  describe('check_key', function() {
 
-    describe('GET /hello', function() {
+    describe('GET /checkKey', function() {
 
       it('should return a default string', function(done) {
 
@@ -24,11 +24,11 @@ describe('controllers', function() {
           });
       });
 
-      it('should accept a name parameter', function(done) {
+      it('should accept an apiKey parameter', function(done) {
 
         request(server)
-          .get('/hello')
-          .query({ name: 'Scott'})
+          .get('/checkKey')
+          .query({ apiKey: 'testKey' })
           .set('Accept', 'application/json')
           .expect('Content-Type', /json/)
           .expect(200)
