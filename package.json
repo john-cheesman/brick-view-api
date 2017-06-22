@@ -11,7 +11,7 @@
     "express": "^4.12.3",
     "request": "^2.81.0",
     "swagger-express-mw": "^0.1.0",
-    "xml2js": "^0.4.17"
+    "xml-parser": "^1.2.1"
   },
   "devDependencies": {
     "should": "^7.1.0",

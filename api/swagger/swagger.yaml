@@ -19,7 +19,7 @@ produces:
   - application/json
 paths:
   /login:
-    x-swawgger-router-controller: login
+    x-swawgger-router-controller: authentication
     post:
       description: Login to a user account
       operationId: login
@@ -38,11 +38,11 @@ paths:
           description: Error
           schema:
             $ref: "#/definitions/ErrorResponse"
-  /checkKey:
-    x-swagger-router-controller: check_key
+  /checkApiKey:
+    x-swagger-router-controller: authentication
     get:
       description: Check the validity of an API key
-      operationId: checkKey
+      operationId: checkApiKey
       parameters:
         - name: apiKey
           in: query
@@ -53,7 +53,7 @@ paths:
         "200":
           description: Success
           schema:
-            $ref: "#/definitions/CheckKeyResponse"
+            $ref: "#/definitions/CheckApiKeyResponse"
         default:
           description: Error
           schema:
@@ -78,7 +78,7 @@ definitions:
     properties:
       userHash:
         type: string
-  CheckKeyResponse:
+  CheckApiKeyResponse:
     required:
       - valid
     properties:
